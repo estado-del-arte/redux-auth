@@ -36,18 +36,6 @@ export default function Navbar() {
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
                 <Link 
-                  className={`nav-link px-3 py-2 rounded-pill mx-1 ${location.pathname === '/' ? 'active' : ''}`} 
-                  to="/"
-                  style={{
-                    color: location.pathname === '/' ? '#007AFF' : '#e5e5e7',
-                    backgroundColor: location.pathname === '/' ? 'rgba(0, 122, 255, 0.1)' : 'transparent',
-                    transition: 'all 0.2s ease'
-                  }}
-                >
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link 
                   className={`nav-link px-3 py-2 rounded-pill mx-1 ${location.pathname === '/agency' ? 'active' : ''}`} 
                   to="/agency"
                   style={{
