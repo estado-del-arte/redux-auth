@@ -45,7 +45,7 @@ export default function Agency() {
             style={{ fontSize: '1.25rem', color: '#ffffff' }}
           >
             <i className="bi bi-code-square me-2" style={{ color: '#007AFF', fontSize: '1.5rem' }}></i>
-            CodeCraft Studio
+            CodeCraft
           </button>
           
           <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -1147,8 +1147,8 @@ export default function Agency() {
                         placeholder="Tu nombre"
                         style={{
                           backgroundColor: '#2c2c2e',
-                          border: '1px solid #48484a',
-                          color: '#ffffff',
+                          border: '1px solid #48484c',
+                          color: '#F8F6F0',
                           borderRadius: '12px',
                           padding: '16px 20px'
                         }}

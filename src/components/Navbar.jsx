@@ -25,7 +25,7 @@ export default function Navbar() {
             color: '#ffffff'
           }}>
             <i className="bi bi-lightning-charge-fill me-2" style={{ color: '#007AFF' }}></i>
-            ReactApp
+            Catálogo de Starters
           </Link>
           
           <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -44,8 +44,6 @@ export default function Navbar() {
                     transition: 'all 0.2s ease'
                   }}
                 >
-                  <i className="bi bi-house me-2"></i>
-                  Inicio
                 </Link>
               </li>
               <li className="nav-item">
@@ -59,21 +57,33 @@ export default function Navbar() {
                   }}
                 >
                   <i className="bi bi-code-square me-2"></i>
-                  Agencia Dev
+                  CodeCraft
                 </Link>
               </li>
               <li className="nav-item">
                 <Link 
-                  className={`nav-link px-3 py-2 rounded-pill mx-1 ${location.pathname === '/counter' ? 'active' : ''}`} 
-                  to="/counter"
+                  className={`nav-link px-3 py-2 rounded-pill mx-1 ${location.pathname === '/video-services' ? 'active' : ''}`} 
+                  to="/video-services"
                   style={{
-                    color: location.pathname === '/counter' ? '#007AFF' : '#e5e5e7',
-                    backgroundColor: location.pathname === '/counter' ? 'rgba(0, 122, 255, 0.1)' : 'transparent',
+                    color: location.pathname === '/video-services' ? '#ff453a' : '#e5e5e7',
+                    backgroundColor: location.pathname === '/video-services' ? 'rgba(255, 69, 58, 0.1)' : 'transparent',
                     transition: 'all 0.2s ease'
                   }}
                 >
-                  <i className="bi bi-calculator me-2"></i>
-                  Counter
+                  <i className="bi bi-camera-video me-2"></i>
+                  VideoCraft
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link 
+                  className={`nav-link px-3 py-2 rounded-pill mx-1 ${location.pathname === '/catalog-starters' ? 'active' : ''}`} 
+                  to="/catalog-starters"
+                  style={{
+                    color: location.pathname === '/catalog-starters' ? '#007AFF' : '#e5e5e7',
+                    backgroundColor: location.pathname === '/catalog-starters' ? 'rgba(0, 122, 255, 0.1)' : 'transparent',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
                 </Link>
               </li>
             </ul>
