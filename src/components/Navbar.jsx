@@ -50,6 +50,20 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <Link 
+                  className={`nav-link px-3 py-2 rounded-pill mx-1 ${location.pathname === '/agency' ? 'active' : ''}`} 
+                  to="/agency"
+                  style={{
+                    color: location.pathname === '/agency' ? '#007AFF' : '#e5e5e7',
+                    backgroundColor: location.pathname === '/agency' ? 'rgba(0, 122, 255, 0.1)' : 'transparent',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  <i className="bi bi-code-square me-2"></i>
+                  Agencia Dev
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link 
                   className={`nav-link px-3 py-2 rounded-pill mx-1 ${location.pathname === '/counter' ? 'active' : ''}`} 
                   to="/counter"
                   style={{
